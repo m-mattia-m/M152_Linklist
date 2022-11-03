@@ -1,0 +1,127 @@
+@import url("normalize.css/normalize.css");
+@import url("@fortawesome/fontawesome-free/css/all.min.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+$margin-space: 32;
+[x-cloak] {
+    @apply hidden;
+}
+
+html,
+.body,
+body,
+.body {
+    @apply h-screen;
+    @apply w-screen;
+    @apply p-0;
+    @apply m-0;
+}
+
+main,
+.main {
+    @apply h-full;
+    @apply w-full;
+    @apply font-sans;
+}
+
+h1,
+.h1 {
+    @apply text-4xl;
+    @apply mb-3;
+}
+
+h2,
+.h2 {
+    @apply text-3xl;
+    @apply mb-3;
+}
+
+h3,
+.h3 {
+    @apply text-2xl;
+    @apply mb-2;
+}
+
+p {
+    @apply mb-1;
+}
+
+main {
+    @apply h-screen;
+    @apply flex;
+    @apply items-center;
+    @apply justify-center;
+    @apply flex-row;
+    @apply bg-secondary;
+}
+
+.tile {
+    @apply bg-primary;
+    @apply text-white;
+    @apply p-8;
+    @apply border;
+    @apply rounded-lg;
+    @apply transform;
+    @apply transition;
+    @apply ease-in;
+    @apply duration-300;
+    @apply hover:scale-125;
+}
+
+.tile-link {
+    @apply flex;
+    @apply flex-col;
+    @apply justify-center;
+    @apply text-center;
+}
+.tile-link > p {
+   @apply mt-5; 
+   @apply text-center;
+}
+
+i {
+    @apply text-6xl;
+}
+
+.placeholder {
+    @apply w-16;
+    @apply h-0;
+}
+
+@media screen and (max-width: 700px) {
+    main {
+        @apply flex-col;
+    }
+    .placeholder {
+        @apply h-16;
+        @apply w-0;
+    }
+}
+
+
+// -----------------------
+
+alert,
+.alert {
+    @apply flex;
+    @apply justify-center;
+    @apply fixed;
+    @apply bottom-24;
+    @apply w-96;
+    @apply pl-8;
+}
+
+alert-container,
+.alert-container {
+    @apply border;
+    @apply px-4;
+    @apply py-3;
+    @apply rounded;
+    @apply relative;
+    @apply pr-10;
+    @apply bg-orange-100;
+    @apply border-orange-400;
+    @apply text-orange-700;
+
+}

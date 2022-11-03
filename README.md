@@ -1,3 +1,11 @@
-# M152_Linklist
+# ePortfolio
 
-This is the link list that contains all the resources of this ePortfolio.
+## Getting started
+
+1. npm install && npm run dev
+   1. npm install
+   2. npm run dev
+
+## Show build
+
+ 1. `npx serve dist/`

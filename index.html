@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ePortfolio SocialChat</title>
+
+    <link rel="stylesheet" href="./src/style.scss" />
+
+    <script type="module" src="./src/main.js"></script>
+    <!-- <script type="module" src="./src/app.js"></script> -->
+</head>
+
+<body>
+    <main x-data="{ alert: false }">
+        <div class="tile">
+            <a href="https://github.com/m-mattia-m/M152_ePortfolio" target="_blank" class="tile-link"><i class="fa-brands fa-github"></i><p>Github</p></a>
+        </div>
+        <span class="placeholder"></span>
+        <div class="tile">
+            <a href="https://m-mattia-m.github.io/M152_ePortfolio/" target="_blank" class="tile-link"><i class="fa-brands fa-chrome"></i><p>Webseite</p></a>
+        </div>
+        <span class="placeholder"></span>
+        <div class="tile">
+            <a href="https://github.com/m-mattia-m/M152_ePortfolio/blob/main/Storybook.md" target="_blank" class="tile-link"><i class="fa-solid fa-book"></i><p>Storybook</p></a>
+        </div>
+        <span class="placeholder"></span>
+        <div class="tile" x-on:click="alert = true">
+            <a href="#" class="tile-link"><i class="fa-brands fa-youtube"></i><p>Video</p></a>
+        </div>
+
+
+        <alert-success class="alert" x-show="alert">
+            <div class="alert-container" role="alert">
+                <span class="block sm:inline">Nicht verfügbar!</span>
+                <span class="absolute top-0 bottom-0 right-0 px-4 py-3"  x-on:click="alert = false">
+                  <svg @click="alertSuccess = false" class="fill-current h-6 w-6 text-orange-500" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>Close</title><path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"/></svg>
+                </span>
+            </div>
+        </alert-success>
+
+    </main>
+    <button x-on:click="console.log('Hello World!')">Say Hi</button>
+</body>
+
+</html>
